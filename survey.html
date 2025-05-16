@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <link rel=" stylesheet" href="general.css"
+    <script src="script.js"
+</head> 
+<form action="#" method="post" id="survey-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <p>How did you find my portfolio?</p>
+    <input type="radio" id="search" name="source" value="Search Engine" required>
+    <label for="search">Search Engine</label>
+    <input type="radio" id="friend" name="source" value="Friend">
+    <label for="friend">Friend</label>
+    <input type="radio" id="social" name="source" value="Social Media">
+    <label for="social">Social Media</label>
+
+    <p>What did you like? (Check all that apply)</p>
+    <input type="checkbox" id="design" name="like" value="Design">
+    <label for="design">Design</label>
+    <input type="checkbox" id="content" name="like" value="Content">
+    <label for="content">Content</label>
+    <input type="checkbox" id="navigation" name="like" value="Navigation">
+    <label for="navigation">Navigation</label>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4"></textarea>
+
+    <!-- Error messages will appear here -->
+    <ul id="error-messages"></ul>
+
+    <button type="submit">Submit</button>
+</form>
